@@ -1,0 +1,376 @@
+{
+  "threats": [
+    {
+      "id": "scan-mvm7e2rs-05yq",
+      "timestamp": "2026-10-24T09:35:32.488Z",
+      "inputType": "text",
+      "inputSnippet": "URGENT: confirm your identity at http://evil.xyz or your account will be locked",
+      "threatLevel": "HIGH",
+      "threatScore": 88,
+      "category": "Credential Harvesting & Phishing",
+      "summary": "Deceptive phishing attempt using artificial urgency to trick you into entering credentials.",
+      "riskIndicators": [
+        "Manufactured crisis deadline demanding rapid verification",
+        "Unverified link directing away from official app"
+      ],
+      "recommendedSteps": [
+        "Do NOT click the link or supply login credentials",
+        "Log into the official website via a clean browser tab to verify",
+        "Block sender and flag as phishing"
+      ],
+      "defensiveChecklist": [
+        {
+          "task": "Check sender email domain for typosquatting",
+          "done": false
+        },
+        {
+          "task": "Update password if credentials were typed",
+          "done": false
+        }
+      ],
+      "technicalDetails": {
+        "domainChecked": "external-link-detected",
+        "isSpoofed": false,
+        "urgencyLanguageDetected": true,
+        "credentialDemandDetected": false
+      }
+    },
+    {
+      "id": "scan-mvm8465z-mj2t",
+      "timestamp": "2026-10-24T09:55:49.943Z",
+      "inputType": "text",
+      "inputSnippet": "URGENT: Your bank account will be suspended unless you click http://secure-banking-verify-alert.com to reset credentials immediately.",
+      "threatLevel": "HIGH",
+      "threatScore": 88,
+      "category": "Credential Harvesting & Phishing",
+      "summary": "Deceptive phishing attempt using artificial urgency to trick you into entering credentials.",
+      "riskIndicators": [
+        "Manufactured crisis deadline demanding rapid verification",
+        "Unverified link directing away from official app"
+      ],
+      "recommendedSteps": [
+        "Do NOT click the link or supply login credentials",
+        "Log into the official website via a clean browser tab to verify",
+        "Block sender and flag as phishing"
+      ],
+      "defensiveChecklist": [
+        {
+          "task": "Check sender email domain for typosquatting",
+          "done": false
+        },
+        {
+          "task": "Update password if credentials were typed",
+          "done": false
+        }
+      ],
+      "technicalDetails": {
+        "domainChecked": "external-link-detected",
+        "isSpoofed": false,
+        "urgencyLanguageDetected": true,
+        "credentialDemandDetected": false
+      }
+    }
+  ],
+  "impersonations": [],
+  "imageMisuseCases": [],
+  "privacyAssessment": {
+    "id": "assessment-latest",
+    "completedAt": "2026-10-23T09:32:51.528Z",
+    "overallScore": 0,
+    "categoryScores": [
+      {
+        "categoryId": "social",
+        "title": "Social Media Footprint",
+        "description": "Profile discoverability, search indexing, and tag permissions.",
+        "score": 0,
+        "status": "NEEDS_ATTENTION",
+        "completedTasks": 0,
+        "totalTasks": 4
+      },
+      {
+        "categoryId": "location",
+        "title": "Location & Geo-tagging",
+        "description": "EXIF metadata in photos, live sharing, and check-in history.",
+        "score": 0,
+        "status": "NEEDS_ATTENTION",
+        "completedTasks": 0,
+        "totalTasks": 4
+      },
+      {
+        "categoryId": "auth",
+        "title": "Authentication & Passkeys",
+        "description": "2FA via Authenticator, passkeys, and password uniqueness.",
+        "score": 0,
+        "status": "NEEDS_ATTENTION",
+        "completedTasks": 0,
+        "totalTasks": 3
+      },
+      {
+        "categoryId": "permissions",
+        "title": "App Device Permissions",
+        "description": "Microphone, background location, and camera access audits.",
+        "score": 0,
+        "status": "NEEDS_ATTENTION",
+        "completedTasks": 0,
+        "totalTasks": 3
+      },
+      {
+        "categoryId": "brokers",
+        "title": "Data Brokers & People Search",
+        "description": "Public directory listings with phone numbers and home addresses.",
+        "score": 0,
+        "status": "NEEDS_ATTENTION",
+        "completedTasks": 0,
+        "totalTasks": 3
+      },
+      {
+        "categoryId": "cloud",
+        "title": "Cloud Albums & Sharing Links",
+        "description": "Public Google Drive / iCloud album links and guest access.",
+        "score": 0,
+        "status": "NEEDS_ATTENTION",
+        "completedTasks": 0,
+        "totalTasks": 3
+      },
+      {
+        "categoryId": "wifi",
+        "title": "Network & Public Wi-Fi",
+        "description": "DNS privacy, encrypted Wi-Fi networks, and VPN utilization.",
+        "score": 0,
+        "status": "NEEDS_ATTENTION",
+        "completedTasks": 0,
+        "totalTasks": 2
+      },
+      {
+        "categoryId": "lock",
+        "title": "Emergency Digital Lockdown",
+        "description": "Trusted contact recovery, legacy access, and rapid device wipe.",
+        "score": 0,
+        "status": "NEEDS_ATTENTION",
+        "completedTasks": 0,
+        "totalTasks": 2
+      }
+    ],
+    "tasks": [
+      {
+        "id": "task-1",
+        "categoryId": "social",
+        "title": "Disable search engine indexing on Facebook and LinkedIn",
+        "description": "Prevent search engines outside the platforms from linking to your profile.",
+        "impact": "HIGH",
+        "platform": "Meta / LinkedIn",
+        "isCompleted": false
+      },
+      {
+        "id": "task-2",
+        "categoryId": "social",
+        "title": "Review and approve photo tags before they appear on profile",
+        "description": "Stop associates or strangers from tagging your location or profile.",
+        "impact": "MEDIUM",
+        "platform": "Instagram",
+        "isCompleted": false
+      },
+      {
+        "id": "task-3",
+        "categoryId": "social",
+        "title": "Set Instagram account to Private",
+        "description": "Ensure only approved followers can see stories and posts.",
+        "impact": "HIGH",
+        "platform": "Instagram",
+        "isCompleted": false
+      },
+      {
+        "id": "task-4",
+        "categoryId": "social",
+        "title": "Audit third-party connected apps & OAuth tokens",
+        "description": "Revoke old games or quiz tools that have read permissions on your profile.",
+        "impact": "HIGH",
+        "platform": "Google / Meta",
+        "isCompleted": false
+      },
+      {
+        "id": "task-5",
+        "categoryId": "location",
+        "title": "Strip EXIF GPS tags from shared photos",
+        "description": "Ensure images posted online do not embed longitude and latitude.",
+        "impact": "HIGH",
+        "platform": "iOS / Android",
+        "isCompleted": false
+      },
+      {
+        "id": "task-6",
+        "categoryId": "location",
+        "title": "Set Location Services to \"While Using\" only",
+        "description": "Never grant \"Always Allow\" location access to social or shopping apps.",
+        "impact": "HIGH",
+        "platform": "System Settings",
+        "isCompleted": false
+      },
+      {
+        "id": "task-7",
+        "categoryId": "location",
+        "title": "Turn off Google Maps Timeline location history sharing",
+        "description": "Avoid public links or household device sharing of visited places.",
+        "impact": "MEDIUM",
+        "platform": "Google Account",
+        "isCompleted": false
+      },
+      {
+        "id": "task-8",
+        "categoryId": "location",
+        "title": "Review Find My / Live Location circle members",
+        "description": "Prune past contacts who no longer need permanent location visibility.",
+        "impact": "HIGH",
+        "platform": "Apple / Android",
+        "isCompleted": false
+      },
+      {
+        "id": "task-9",
+        "categoryId": "auth",
+        "title": "Upgrade from SMS 2FA to Hardware Security Key or Authenticator",
+        "description": "Defend against SIM-swapping attacks by removing SMS OTP reliance.",
+        "impact": "HIGH",
+        "platform": "All Accounts",
+        "isCompleted": false
+      },
+      {
+        "id": "task-10",
+        "categoryId": "auth",
+        "title": "Create unique 16+ character password on Master Email",
+        "description": "Your recovery email is the keys to the castle; keep it completely unique.",
+        "impact": "HIGH",
+        "platform": "Primary Email",
+        "isCompleted": false
+      },
+      {
+        "id": "task-11",
+        "categoryId": "auth",
+        "title": "Generate offline backup emergency recovery codes",
+        "description": "Print or securely store 10 one-time recovery codes for lockout scenarios.",
+        "impact": "HIGH",
+        "platform": "Google / Apple",
+        "isCompleted": false
+      },
+      {
+        "id": "task-12",
+        "categoryId": "permissions",
+        "title": "Audit microphone and camera permissions for unused apps",
+        "description": "Revoke sensory permissions from ride-share, food delivery, and retail apps.",
+        "impact": "HIGH",
+        "platform": "System Settings",
+        "isCompleted": false
+      },
+      {
+        "id": "task-13",
+        "categoryId": "permissions",
+        "title": "Disable Bluetooth and AirDrop when in crowded transit corridors",
+        "description": "Prevent unwanted AirDrop spam and Bluetooth proximity beacons.",
+        "impact": "MEDIUM",
+        "platform": "Device Control Center",
+        "isCompleted": false
+      },
+      {
+        "id": "task-14",
+        "categoryId": "permissions",
+        "title": "Check Local Network permissions on iOS / Android",
+        "description": "Block apps from scanning devices on your home or hotel Wi-Fi.",
+        "impact": "MEDIUM",
+        "platform": "Privacy Settings",
+        "isCompleted": false
+      },
+      {
+        "id": "task-15",
+        "categoryId": "brokers",
+        "title": "Submit removal requests on FastPeopleSearch & TruePeopleSearch",
+        "description": "Request deletion of your residential address and family relationships.",
+        "impact": "HIGH",
+        "platform": "People Search",
+        "isCompleted": false
+      },
+      {
+        "id": "task-16",
+        "categoryId": "brokers",
+        "title": "Opt-out of Whitepages directory listing",
+        "description": "Remove public phone number lookup.",
+        "impact": "HIGH",
+        "platform": "Whitepages",
+        "isCompleted": false
+      },
+      {
+        "id": "task-17",
+        "categoryId": "brokers",
+        "title": "Remove public voter registration address lookup where state law permits",
+        "description": "Submit confidential voter request if experiencing stalking or threats.",
+        "impact": "MEDIUM",
+        "platform": "State Registrar",
+        "isCompleted": false
+      },
+      {
+        "id": "task-18",
+        "categoryId": "cloud",
+        "title": "Audit shared Google Drive links set to \"Anyone with the link\"",
+        "description": "Change open permissions to restricted individual emails only.",
+        "impact": "HIGH",
+        "platform": "Google Drive",
+        "isCompleted": false
+      },
+      {
+        "id": "task-19",
+        "categoryId": "cloud",
+        "title": "Turn off shared family album public web links",
+        "description": "Ensure photo streams cannot be reached via random web URLs.",
+        "impact": "HIGH",
+        "platform": "iCloud / Photos",
+        "isCompleted": false
+      },
+      {
+        "id": "task-20",
+        "categoryId": "cloud",
+        "title": "Enable multi-factor approval for new cloud backups",
+        "description": "Prevent silent restoration of your backups onto foreign devices.",
+        "impact": "MEDIUM",
+        "platform": "Cloud Storage",
+        "isCompleted": false
+      },
+      {
+        "id": "task-21",
+        "categoryId": "wifi",
+        "title": "Enable Private Wi-Fi MAC Address randomization",
+        "description": "Stop commercial venue Wi-Fi networks from tracking your device across visits.",
+        "impact": "MEDIUM",
+        "platform": "Network Settings",
+        "isCompleted": false
+      },
+      {
+        "id": "task-22",
+        "categoryId": "wifi",
+        "title": "Use Encrypted DNS over HTTPS (DoH) / Cloudflare 1.1.1.1",
+        "description": "Shield website lookup queries from snooping on public hotspot networks.",
+        "impact": "MEDIUM",
+        "platform": "System / Browser",
+        "isCompleted": false
+      },
+      {
+        "id": "task-23",
+        "categoryId": "lock",
+        "title": "Set up Account Recovery Contact with trusted Safe Circle member",
+        "description": "Designate a trusted loved one who can verify your identity if locked out.",
+        "impact": "HIGH",
+        "platform": "Apple / Google Account",
+        "isCompleted": false
+      },
+      {
+        "id": "task-24",
+        "categoryId": "lock",
+        "title": "Enable remote wipe via Find My / Find My Device",
+        "description": "Guarantee you can erase photos and passwords if your physical phone is taken.",
+        "impact": "HIGH",
+        "platform": "Device Security",
+        "isCompleted": false
+      }
+    ],
+    "assessmentType": "SELF_REPORTED_CHECKLIST"
+  },
+  "recoverySessions": [],
+  "incidents": []
+}

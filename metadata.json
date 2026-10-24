@@ -1,0 +1,7 @@
+{
+  "name": "AuraSafe - AI Safe Navigation",
+  "description": "AI/ML-powered adaptive route safety scoring, priority-tailored recommendations, live emergency location sharing, and panic siren for women.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
