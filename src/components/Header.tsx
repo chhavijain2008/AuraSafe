@@ -96,7 +96,11 @@ export const Header: React.FC<HeaderProps> = ({
             className="flex items-center gap-2.5 text-left group cursor-pointer"
           >
             <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-[#E94F83] via-[#F5A5BC] to-[#FFE7ED] flex items-center justify-center text-white shadow-sm shadow-[#F5A5BC]/50 group-hover:scale-105 transition-transform border border-white">
-              <Shield className="w-5 h-5 fill-white/20" />
+              <img
+                src="/aurasafe-logo.png"
+                alt="AuraSafe logo"
+                className="h-10 w-10 object-contain"
+              />
             </div>
             <div>
               <div className="flex items-center gap-1.5">
